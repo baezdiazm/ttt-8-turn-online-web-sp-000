@@ -29,6 +29,8 @@ def turn(board)
 
   if valid_move?(board, index)
     board[index] = "X"
+  else
+    turn(board)
   end
 
   display_board(board)
